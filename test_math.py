@@ -16,3 +16,4 @@ def test_func():
 
 def test_func1():
     assert smath.func(3) != 5
+
