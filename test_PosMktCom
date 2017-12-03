@@ -4,12 +4,12 @@ from selenium import webdriver
 import os
 import time
 
-chromepath = os.path.abspath(r"/usr/local/share/chromedriver")
-driver = webdriver.Chrome(chromepath)
-driver.get("https://pos.dianjia.io")
+#chromepath = os.path.abspath(r"/usr/local/share/chromedriver")
+#driver = webdriver.Chrome(chromepath)
+driver = webdriver.Chrome()
+driver.get("https://shop.dianjia.io")
 driver.find_element_by_id("brandId").send_keys("10010")
-driver.find_element_by_id("username").send_keys("18767157977")
-driver.find_element_by_id("password").send_keys("88888888")
+driver.find_element_by_id("username").send_keys("15868974532")
+driver.find_element_by_id("password").send_keys("123456")
 driver.find_element_by_id("popup-submit").click()
-driver.find_element_by_class_name("fa fa-tags").click()
 print driver.title
